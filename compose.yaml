@@ -5,9 +5,9 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /opt/pds
+        source: /pds
         target: /pds
     ports:
       - '6010:3000'
     env_file:
-      - /opt/pds/pds.env
+      - /pds/pds.env
